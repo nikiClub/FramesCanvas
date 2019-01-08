@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<canvas id='cvs' width='300' height='300' data-source='imgs/number/'></canvas>
+</body>
+<script src='js/FramesCanvas.js'></script>
+<script>
+    let indexcvs = new FramesCanvas(document.getElementById('cvs'), {
+        width: 300,
+        height: 300,
+        frame: 40,
+        loop: true,
+        fps: 3
+    }, function () {
+
+    })
+    indexcvs.play();
+</script>
+</html>
